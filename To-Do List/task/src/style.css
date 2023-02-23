@@ -1,0 +1,99 @@
+#container {
+    margin: auto;
+    width: 500px;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: normal;
+}
+
+.add-task {
+    display: flex;
+    width: 100%;
+    height: 50px;
+}
+
+#input-task {
+    border-color: transparent;
+    border-bottom-color: lavender;
+    border-width: 3px;
+    flex-grow: 3;
+}
+
+#add-task-button {
+    border: transparent;
+    color: white;
+    background-color: mediumpurple;
+    flex-grow: 1;
+    font-size: 25px;
+}
+
+#add-task-button:hover {
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+#add-task-button:active {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    background-color: #775AB2;
+}
+
+ul {
+    padding-left: 0;
+}
+
+li {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.delete-btn {
+    margin-left: auto;
+    height: 30px;
+    width: 30px;
+    font-size: 17px;
+    background-color: indianred;
+    border-color: transparent;
+    border-radius: 15px;
+    color: white;
+    font-weight: lighter;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+}
+
+.delete-btn:after {
+    content: '\2716';
+}
+
+.delete-btn:hover {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.delete-btn:active {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+    background-color: #B45050;
+}
+
+input[type='checkbox'] {
+    transform: scale(2);
+    cursor: pointer;
+    margin-top: 9px;
+}
+
+.task {
+    font-size: 20px;
+    margin-left: 5px;
+    display: inline-block;
+    word-wrap: break-word;
+    align-self: center;
+}
+
+.doneTask {
+    text-decoration: line-through;
+}
+
+
