@@ -19,6 +19,7 @@ h1 {
     border-bottom-color: lavender;
     border-width: 3px;
     flex-grow: 3;
+    font-size: 20px;
 }
 
 #add-task-button {

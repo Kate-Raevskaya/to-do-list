@@ -38,6 +38,7 @@ for (let task of tasks) {
     createTask(task);
 }
 
+
 addTaskButton.addEventListener("click", () => {
     if (newTask.value === "") {
         return;
@@ -51,3 +52,8 @@ addTaskButton.addEventListener("click", () => {
     createTask(task);
     newTask.value = "";
 });
+newTask.addEventListener("keypress", (event) => {
+    if (event.key === "Enter") {
+        addTaskButton.click();
+    }
+})
